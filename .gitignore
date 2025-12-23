@@ -43,3 +43,6 @@ security-report-*.pdf
 .coverage
 htmlcov/
 .pytest_cache/
+
+# Backup files
+*.backup

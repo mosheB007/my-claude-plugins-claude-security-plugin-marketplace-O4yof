@@ -20,26 +20,22 @@
     {
       "name": "security:audit",
       "description": "Run comprehensive security audit on current project",
-      "script": "commands/audit.sh",
-      "usage": "/security:audit [--depth=full|quick] [--output=json|markdown]"
+      "script": "commands/audit.sh"
     },
     {
       "name": "security:scan-deps",
       "description": "Scan all dependencies for known vulnerabilities and malicious packages",
-      "script": "commands/scan-dependencies.sh",
-      "usage": "/security:scan-deps [--severity=critical|high|medium|low]"
+      "script": "commands/scan-dependencies.sh"
     },
     {
       "name": "security:check-secrets",
       "description": "Detect hardcoded secrets, API keys, and sensitive data",
-      "script": "commands/check-secrets.sh",
-      "usage": "/security:check-secrets [--include-history]"
+      "script": "commands/check-secrets.sh"
     },
     {
       "name": "security:report",
       "description": "Generate detailed security report for stakeholders",
-      "script": "commands/generate-report.sh",
-      "usage": "/security:report [--format=pdf|html|markdown]"
+      "script": "commands/generate-report.sh"
     }
   ],
   "agents": [
@@ -73,20 +69,12 @@
   ],
   "hooks": [
     {
-      "name": "SessionStart",
-      "description": "Show security tools menu on session start",
+      "type": "SessionStart",
       "script": "hooks/SessionStart.sh"
     },
     {
-      "name": "PreCommit",
-      "description": "Security check before commits",
+      "type": "PreCommit",
       "script": "hooks/PreCommit.sh"
     }
-  ],
-  "settings": {
-    "defaultScanDepth": "full",
-    "minSecurityScore": 85,
-    "enableRealTimeScanning": true,
-    "complianceStandards": ["OWASP-Top-10", "CWE-Top-25", "PCI-DSS"]
-  }
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "name": "security-focused-marketplace",
   "version": "1.0.0",
-  "description": "Enterprise-grade security and compliance plugins for production deployments",
+  "description": "Enterprise-grade security and compliance plugins",
   "owner": {
     "name": "Moshe",
     "email": "bitan.moshe@gmail.com"
@@ -12,9 +12,8 @@
       "name": "security-auditor",
       "version": "1.0.0",
       "source": "./plugins/security-auditor",
-      "description": "Comprehensive production security auditor - validates projects against enterprise security standards, scans for vulnerabilities, malicious packages, and ensures compliance before deployment",
-      "author": "Moshe <bitan.moshe@gmail.com>",
-      "tags": ["security", "audit", "compliance", "production", "vulnerability-scanning"],
+      "description": "Comprehensive security auditor for production deployments",
+      "tags": ["security", "audit", "compliance"],
       "license": "MIT"
     }
   ]

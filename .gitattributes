@@ -1,0 +1,17 @@
+# Ensure consistent line endings
+* text=auto eol=lf
+
+# JSON files
+*.json text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+
+# Markdown files
+*.md text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary

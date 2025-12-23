@@ -1,0 +1,22 @@
+{
+  "name": "security-focused-marketplace",
+  "version": "1.0.0",
+  "description": "Enterprise-grade security and compliance plugins for production deployments",
+  "author": "Moshe - Senior QA & Security Engineer",
+  "repository": "https://github.com/mosheB007/my-claude-plugins",
+  "plugins": [
+    {
+      "name": "security-auditor",
+      "version": "1.0.0",
+      "source": "./plugins/security-auditor",
+      "description": "Comprehensive production security auditor - validates projects against enterprise security standards, scans for vulnerabilities, malicious packages, and ensures compliance before deployment",
+      "author": "Moshe",
+      "tags": ["security", "audit", "compliance", "production", "vulnerability-scanning"],
+      "license": "MIT",
+      "requirements": {
+        "tools": ["python3", "npm", "git"],
+        "optional": ["semgrep", "trivy", "bandit"]
+      }
+    }
+  ]
+}

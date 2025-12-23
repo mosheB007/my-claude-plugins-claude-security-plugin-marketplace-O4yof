@@ -30,10 +30,10 @@ jobs:
 
       - name: Check required fields in marketplace.json
         run: |
-          echo "🔍 Checking marketplace.json structure..."
-          jq -e '.name and .version and .description and .author and .repository and .plugins' \
-            .claude-plugin/marketplace.json
-          echo "✅ All required fields present in marketplace.json"
+           echo "🔍 Checking marketplace.json structure..."
+           jq -e '.name and .version and .description and .owner and .repository and .plugins' \
+           .claude-plugin/marketplace.json
+           echo "✅ All required fields present in marketplace.json"
 
       - name: Check required fields in plugin.json
         run: |

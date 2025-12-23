@@ -2,7 +2,9 @@
   "name": "security-auditor",
   "version": "1.0.0",
   "description": "Production Security Auditor - Enterprise-grade security validation for pre-deployment",
-  "author": "Moshe",
+  "author": {
+    "name": "Moshe"
+  },
   "license": "MIT",
   "homepage": "https://github.com/mosheB007/my-claude-plugins",
   "keywords": [

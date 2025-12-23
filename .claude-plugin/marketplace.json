@@ -13,9 +13,7 @@
       "version": "1.0.0",
       "source": "./plugins/security-auditor",
       "description": "Comprehensive production security auditor - validates projects against enterprise security standards, scans for vulnerabilities, malicious packages, and ensures compliance before deployment",
-      "author": {
-        "name": "Moshe"
-      },
+      "author": "Moshe <bitan.moshe@gmail.com>",
       "tags": ["security", "audit", "compliance", "production", "vulnerability-scanning"],
       "license": "MIT"
     }

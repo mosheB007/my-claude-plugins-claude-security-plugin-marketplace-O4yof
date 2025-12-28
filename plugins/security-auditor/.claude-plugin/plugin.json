@@ -15,69 +15,9 @@
     "compliance",
     "production",
     "scanning"
-<<<<<<< HEAD
-=======
   ],
-  "commands": [
-    {
-      "name": "security:audit",
-      "description": "Run comprehensive security audit on current project",
-      "script": "commands/audit.sh"
-    },
-    {
-      "name": "security:scan-deps",
-      "description": "Scan all dependencies for known vulnerabilities and malicious packages",
-      "script": "commands/scan-dependencies.sh"
-    },
-    {
-      "name": "security:check-secrets",
-      "description": "Detect hardcoded secrets, API keys, and sensitive data",
-      "script": "commands/check-secrets.sh"
-    },
-    {
-      "name": "security:report",
-      "description": "Generate detailed security report for stakeholders",
-      "script": "commands/generate-report.sh"
-    }
-  ],
-  "agents": [
-    {
-      "name": "security-expert",
-      "description": "Enterprise security expert for code review and threat analysis",
-      "prompt": "agents/security-expert.md"
-    },
-    {
-      "name": "compliance-checker",
-      "description": "Validates compliance with security standards (OWASP, CWE, etc.)",
-      "prompt": "agents/compliance-checker.md"
-    }
-  ],
-  "skills": [
-    {
-      "name": "vulnerability-detection",
-      "description": "Automatically detects security vulnerabilities in code",
-      "prompt": "skills/vulnerability-detection.md"
-    },
-    {
-      "name": "dependency-analysis",
-      "description": "Analyzes dependencies for security risks and license issues",
-      "prompt": "skills/dependency-analysis.md"
-    },
-    {
-      "name": "code-scanning",
-      "description": "Scans code for security anti-patterns and malicious code",
-      "prompt": "skills/code-scanning.md"
-    }
-  ],
-  "hooks": [
-    {
-      "type": "SessionStart",
-      "script": "hooks/SessionStart.sh"
-    },
-    {
-      "type": "PreCommit",
-      "script": "hooks/PreCommit.sh"
-    }
->>>>>>> 44892847e6d3f3c9b9ad7dc0ff621a4c3fb7065d
-  ]
+  "commands": "./commands/",
+  "agents": "./agents/",
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json"
 }

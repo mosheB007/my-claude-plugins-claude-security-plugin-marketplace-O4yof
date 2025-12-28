@@ -1,8 +1,12 @@
 {
-  "hooks": [
+  "SessionStart": [
     {
-      "event": "SessionStart",
-      "command": "bash plugins/security-auditor/hooks/SessionStart.sh"
+      "hooks": [
+        {
+          "type": "command",
+          "command": "${CLAUDE_PLUGIN_ROOT}/hooks/SessionStart.sh"
+        }
+      ]
     }
   ]
 }

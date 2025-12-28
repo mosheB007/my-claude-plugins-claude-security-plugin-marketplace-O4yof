@@ -1,0 +1,8 @@
+{
+  "hooks": [
+    {
+      "event": "SessionStart",
+      "command": "bash plugins/security-auditor/hooks/SessionStart.sh"
+    }
+  ]
+}

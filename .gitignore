@@ -33,12 +33,16 @@ Thumbs.db
 secrets.json
 credentials.json
 
-# Reports
+# Reports (generated reports, but not templates)
 security-report-*.md
 security-report-*.pdf
+!templates/security-report-template.md
 /tmp/
 
 # Testing
 .coverage
 htmlcov/
 .pytest_cache/
+
+# Backup files
+*.backup
